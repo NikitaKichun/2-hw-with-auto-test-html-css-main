@@ -1,164 +1,193 @@
 * {
-    /* Свойства для сброса начальных стилей элементов */
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
 body {
-    font-family: 'Rubik', sans-serif;
-    background-color: #f8f9fa;
+    font-family: "Inter", sans-serif;
+    color: #303030;
 }
 
 header {
-    /* Стили для хедера */
     background-color: #2965F1;
-    padding: 20px;
-    text-align: center;
-
+    padding: 23px 0;
 }
 
 header span {
-    /* Стили для текста в хедере IT-INCUBATOR */
-    color: white;
-    font-size: 24px
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
 }
 
 .main-section {
-    /* Стили для первой секции */
-    text-align: center;
-    padding: 30px 20px;
-    background-color: white;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fafaff;
+    padding: 60px 0;
+    min-height: 100vh;
+    
+}
+
+.main-section .wrapper {
+    
+}
+
+.text-wrapper {
+    
 }
 
 .main-title {
-    /* Стили для заголовка в первой секции */
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #333;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .main-text {
-    /* Стили для текста в первой секции */
+    font-weight: 400;
     font-size: 18px;
-    margin-bottom: 20px;
-    color: #555;
 }
 
 .main-image {
-    /* Стили для изображения в первой секции */
-    width: 60%;
-    max-width: 500px;
-    border-radius: 10px;
+    max-width: 715px;
 }
 
-
 .about-section {
-    /* Стили для второй секции */
-    padding: 30px 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.about-section .wrapper {
+    
 }
 
 select {
-    /* Стили для выпадающего списка */
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 16px;
+    border: 1px solid rgba(48, 48, 48, 0.3);
     border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-    max-width: 200px;
+    width: 150px;
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 16px;
+    appearance: none; 
+    background-image: url("./ep_arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+}
+
+select:hover,
+.text-field:hover {
+    
+}
+
+
+.info-wrapper {
+    
 }
 
 .section-title {
-    /* Стили для заголовков во второй секции */
+    font-weight: 700;
     font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
+    margin-bottom: 25px;
+}
+
+.frameworks,
+.books {
+    min-width: 50%;
+}
+
+.frameworks-list,
+.books-list {
+    
 }
 
 .frameworks-list {
-    /* Стили для маркированного списка во второй секции */
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 20px;
-    color: #555;
+    font-weight: 400;
+    font-size: 16px;
+    list-style-image: url(./solar_map-arrow-up-bold.svg);
+    padding-left: 20px;
+}
+
+.skills-block {
+    
+}
+
+.skills {
+    
 }
 
 .books-list {
-    /* Стили для нумерованного списка во второй секции */
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 20px;
-    color: #555;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 20px;
 }
 
 .label {
-    /* Стили для подписей чекбоксов */
-    display: block;
-    margin: 10px 0;
-    color: #333;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+form {
+    margin-bottom: 40px;
 }
 
 .text-field {
-    /* Стили для односточного поля ввода текста */
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin: 20px 0;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(48, 48, 48, 0.3);
     border-radius: 5px;
+    max-width: 330px;
+    width: 100%;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px 12px;
+    font-weight: 400;
     font-size: 16px;
 }
 
 .btn {
-    /* Стили для кнопки */
-    padding: 10px 20px;
-    background-color: #2965F1;
-    color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    width: 125px;
+    height: 36px;
+    background-color: #2965f1;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn:hover {
+
 }
 
 .line {
-    /* Стили для линии */
-    margin: 30px 0;
-    border: 1px solid #ddd;
+    margin: 60px 0;
 }
 
 table {
-    /* Стили для таблицы */
-    width: 100%;
+    border: 1px solid #95a1bb;
     border-collapse: collapse;
-    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 auto;
 }
 
 th, td {
-    /* Стили для ячеек таблицы */
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+    padding: 12px 15px;
 }
 
 footer {
-    /* Стили для футера */
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(163, 167, 255, 0.5);
-    color: white;
+    background-color: rgba(163, 167, 255, 0.3);
+    padding: 26px 0;
 }
 
 .footer-link {
-    /* Стили для футера */
-    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2965f1;
     text-decoration: none;
+}
+
+.footer-link:hover {
+
 }
